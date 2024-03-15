@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hud Message Generator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="position-controls">
+		<label for="xPos">X Position:</label>
+		<input type="number" id="xPos" value="0" min="-1" max="1">
+		<label for="yPos">Y Position:</label>
+		<input type="number" id="yPos" value="0" min="-1" max="1">
+		<button id="setPosition">Set Position</button>
+	</div>
+
+	<div id="hudPreview" class="hud-component">
+		<img src="image.bmp" alt="HUD Background" id="hudBackground" draggable="false">
+		<div id="hudText" contenteditable="true" spellcheck="false"><b>Your Default Message</b></div>
+	</div>
+
+	<div id="hudCode" class="hud-component">
+		<pre id="codePreview">set_hudmessage(255, 0, 0, 0.0, 0.0, 0, 6.0, 12.0)</pre>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
