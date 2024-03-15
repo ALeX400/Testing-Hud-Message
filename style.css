@@ -1,0 +1,80 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.color-palette {
+	display: grid;
+	grid-template-columns: repeat(3, 30px);
+	gap: 5px;
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	position: absolute;
+	z-index: 1000;
+	color: black;
+	/* Text color for light background */
+}
+
+.color-swatch {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#hudPreview {
+	position: relative;
+}
+
+.position-controls {
+	background-color: #222;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	margin-bottom: 20px;
+	width: fit-content;
+
+}
+
+.position-controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.position-controls label,
+.position-controls input,
+.position-controls button {
+	color: #fff;
+	background-color: #555;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+.position-controls button {
+	cursor: pointer;
+}
+
+#hudText {
+	position: absolute;
+	cursor: move;
+	padding: 5px;
+	color: rgb(255, 0, 0);
+	/* Default text color */
+}
+
+#hudBackground {
+	width: 640px;
+	height: 480px;
+	/* Example dimensions; adjust as necessary */
+}
